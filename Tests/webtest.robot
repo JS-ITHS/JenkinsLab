@@ -7,7 +7,7 @@ Suite Teardown  End Web Test
 
 
 *** Variables ***
-${BROWSER}  headlesschrome
+${BROWSER}  chrome
 ${URL}  http://rental3.infotiv.net/
 ${MAIL}  hiroshi.teshigahara789@gmail.com
 ${PASSWORD}  secret
