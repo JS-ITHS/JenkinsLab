@@ -28,7 +28,7 @@ Go To Car Rental Page
 User Books A Car
     Scroll Element Into View  //*[@id="carTable"]/tbody/tr[16]/td[1]
     Wait Until Page Contains  Model X
-    Click Button  //*[@id="bookModelXpass6"]
+    Click Button  //*[@id="bookModelXpass7"]
     Wait Until Page Contains  Confirm booking of Tesla Model X
 Select Car Not Signed In
     Click Button  //*[@id="bookQ7pass5"]

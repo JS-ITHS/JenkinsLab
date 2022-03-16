@@ -2,11 +2,11 @@ pipeline {
     agent any
     stages {
 
-    stage('Checkout') {
-            steps {
-                git 'https://github.com/JS-ITHS/JenkinsLab.git'
-            }
-          }
+//    stage('Checkout') {
+//            steps {
+//                git 'https://github.com/JS-ITHS/JenkinsLab.git'
+//            }
+//          }
 
         stage('Build') {
             steps {
@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Robot Framework System tests with Selenium') {
             steps {
-                sh 'robot -d Results  Tests'
+                sh 'robot --variable BROWSER:headlesschrome -d Results  Tests'
             }
             post {
                 always {

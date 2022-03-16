@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220316 12:26:59.537" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220316 12:39:56.807" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\joaki\OneDrive\Skrivbord\Mjukvarutestare\Automatiserad Testning\JenkinsLabb\JenkinsLab\Tests">
 <suite id="s1-s1" name="Webtest" source="C:\Users\joaki\OneDrive\Skrivbord\Mjukvarutestare\Automatiserad Testning\JenkinsLabb\JenkinsLab\Tests\webtest.robot">
 <kw name="Begin Web Test" library="keywords" type="SETUP">
@@ -7,152 +7,152 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220316 12:26:59.775" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220316 12:26:59.775" endtime="20220316 12:27:01.145"/>
+<msg timestamp="20220316 12:39:57.032" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220316 12:39:57.032" endtime="20220316 12:39:58.179"/>
 </kw>
 <kw name="Go To Web Page" library="keywords">
 <kw name="Load Page" library="keywords">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220316 12:27:01.146" level="INFO">Opening url 'http://rental3.infotiv.net/'</msg>
-<status status="PASS" starttime="20220316 12:27:01.146" endtime="20220316 12:27:01.254"/>
+<msg timestamp="20220316 12:39:58.179" level="INFO">Opening url 'http://rental3.infotiv.net/'</msg>
+<status status="PASS" starttime="20220316 12:39:58.179" endtime="20220316 12:39:58.326"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.146" endtime="20220316 12:27:01.254"/>
+<status status="PASS" starttime="20220316 12:39:58.179" endtime="20220316 12:39:58.326"/>
 </kw>
 <kw name="Verify Page Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>When do you want to make your trip?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.254" endtime="20220316 12:27:01.263"/>
+<status status="PASS" starttime="20220316 12:39:58.327" endtime="20220316 12:39:58.343"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.254" endtime="20220316 12:27:01.263"/>
+<status status="PASS" starttime="20220316 12:39:58.327" endtime="20220316 12:39:58.343"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.145" endtime="20220316 12:27:01.263"/>
+<status status="PASS" starttime="20220316 12:39:58.179" endtime="20220316 12:39:58.343"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220316 12:27:01.263" endtime="20220316 12:27:01.381"/>
+<status status="PASS" starttime="20220316 12:39:58.343" endtime="20220316 12:39:58.464"/>
 </kw>
-<status status="PASS" starttime="20220316 12:26:59.775" endtime="20220316 12:27:01.382"/>
+<status status="PASS" starttime="20220316 12:39:57.031" endtime="20220316 12:39:58.465"/>
 </kw>
 <test id="s1-s1-t1" name="User Can Cancel Creating a User">
 <kw name="Go To Create User" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="createUser"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.386" level="INFO">Clicking button '//*[@id="createUser"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.385" endtime="20220316 12:27:01.483"/>
+<msg timestamp="20220316 12:39:58.468" level="INFO">Clicking button '//*[@id="createUser"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:58.468" endtime="20220316 12:39:58.614"/>
 </kw>
 <kw name="Verify Create User Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Create a new user</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.484" endtime="20220316 12:27:01.494"/>
+<status status="PASS" starttime="20220316 12:39:58.614" endtime="20220316 12:39:58.626"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.484" endtime="20220316 12:27:01.494"/>
+<status status="PASS" starttime="20220316 12:39:58.614" endtime="20220316 12:39:58.626"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.384" endtime="20220316 12:27:01.494"/>
+<status status="PASS" starttime="20220316 12:39:58.467" endtime="20220316 12:39:58.626"/>
 </kw>
 <kw name="Cancel Creating User" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="cancel"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.495" level="INFO">Clicking button '//*[@id="cancel"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.495" endtime="20220316 12:27:01.561"/>
+<msg timestamp="20220316 12:39:58.628" level="INFO">Clicking button '//*[@id="cancel"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:58.628" endtime="20220316 12:39:58.711"/>
 </kw>
 <kw name="Verify Cancel Creating User Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>When do you want to make your trip?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.562" endtime="20220316 12:27:01.568"/>
+<status status="PASS" starttime="20220316 12:39:58.712" endtime="20220316 12:39:58.718"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.562" endtime="20220316 12:27:01.568"/>
+<status status="PASS" starttime="20220316 12:39:58.711" endtime="20220316 12:39:58.718"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.494" endtime="20220316 12:27:01.568"/>
+<status status="PASS" starttime="20220316 12:39:58.626" endtime="20220316 12:39:58.718"/>
 </kw>
 <kw name="User Is At Date Selection" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="title"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.569" level="INFO">Clicking element '//*[@id="title"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.568" endtime="20220316 12:27:01.622"/>
+<msg timestamp="20220316 12:39:58.720" level="INFO">Clicking element '//*[@id="title"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:58.718" endtime="20220316 12:39:58.810"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>When do you want to make your trip?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.622" endtime="20220316 12:27:01.629"/>
+<status status="PASS" starttime="20220316 12:39:58.811" endtime="20220316 12:39:58.817"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.568" endtime="20220316 12:27:01.629"/>
+<status status="PASS" starttime="20220316 12:39:58.718" endtime="20220316 12:39:58.817"/>
 </kw>
 <doc>Testing that user can cancel creating a user.</doc>
 <tag>G_krav_1</tag>
-<status status="PASS" starttime="20220316 12:27:01.382" endtime="20220316 12:27:01.630"/>
+<status status="PASS" starttime="20220316 12:39:58.465" endtime="20220316 12:39:58.818"/>
 </test>
 <test id="s1-s1-t2" name="User Need To Be Signed In To Book A Car">
 <kw name="Go To Car Rental Page" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="continue"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.632" level="INFO">Clicking button '//*[@id="continue"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.631" endtime="20220316 12:27:01.811"/>
+<msg timestamp="20220316 12:39:58.823" level="INFO">Clicking button '//*[@id="continue"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:58.822" endtime="20220316 12:39:59.034"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>What would you like to drive?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.811" endtime="20220316 12:27:01.821"/>
+<status status="PASS" starttime="20220316 12:39:59.034" endtime="20220316 12:39:59.044"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.631" endtime="20220316 12:27:01.821"/>
+<status status="PASS" starttime="20220316 12:39:58.821" endtime="20220316 12:39:59.044"/>
 </kw>
 <kw name="Select Car Not Signed In" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="bookQ7pass5"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.822" level="INFO">Clicking button '//*[@id="bookQ7pass5"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.822" endtime="20220316 12:27:01.869"/>
+<msg timestamp="20220316 12:39:59.045" level="INFO">Clicking button '//*[@id="bookQ7pass5"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.045" endtime="20220316 12:39:59.111"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.821" endtime="20220316 12:27:01.869"/>
+<status status="PASS" starttime="20220316 12:39:59.044" endtime="20220316 12:39:59.111"/>
 </kw>
 <kw name="Verify Alert Box Appears" library="keywords">
 <kw name="Alert Should Be Present" library="SeleniumLibrary">
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20220316 12:27:01.870" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20220316 12:27:01.870" endtime="20220316 12:27:01.872"/>
+<msg timestamp="20220316 12:39:59.112" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20220316 12:39:59.112" endtime="20220316 12:39:59.116"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.870" endtime="20220316 12:27:01.872"/>
+<status status="PASS" starttime="20220316 12:39:59.112" endtime="20220316 12:39:59.116"/>
 </kw>
 <kw name="User Is At Date Selection" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="title"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.873" level="INFO">Clicking element '//*[@id="title"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.873" endtime="20220316 12:27:01.930"/>
+<msg timestamp="20220316 12:39:59.117" level="INFO">Clicking element '//*[@id="title"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.116" endtime="20220316 12:39:59.181"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>When do you want to make your trip?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.930" endtime="20220316 12:27:01.937"/>
+<status status="PASS" starttime="20220316 12:39:59.182" endtime="20220316 12:39:59.189"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.873" endtime="20220316 12:27:01.937"/>
+<status status="PASS" starttime="20220316 12:39:59.116" endtime="20220316 12:39:59.189"/>
 </kw>
 <doc>Testing that an alert box will appear if user is not signed in when booking car.</doc>
 <tag>G_krav_2</tag>
-<status status="PASS" starttime="20220316 12:27:01.631" endtime="20220316 12:27:01.938"/>
+<status status="PASS" starttime="20220316 12:39:58.819" endtime="20220316 12:39:59.190"/>
 </test>
 <test id="s1-s1-t3" name="User Can Book A Car">
 <kw name="Given User Is At Date Selection" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="title"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.939" level="INFO">Clicking element '//*[@id="title"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.939" endtime="20220316 12:27:01.992"/>
+<msg timestamp="20220316 12:39:59.192" level="INFO">Clicking element '//*[@id="title"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.191" endtime="20220316 12:39:59.250"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>When do you want to make your trip?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:01.992" endtime="20220316 12:27:01.998"/>
+<status status="PASS" starttime="20220316 12:39:59.250" endtime="20220316 12:39:59.257"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.939" endtime="20220316 12:27:01.998"/>
+<status status="PASS" starttime="20220316 12:39:59.191" endtime="20220316 12:39:59.257"/>
 </kw>
 <kw name="And Sign Into User Account" library="keywords">
 <kw name="Enter Account Information" library="keywords">
@@ -160,151 +160,151 @@
 <arg>//*[@id="email"]</arg>
 <arg>${MAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:01.999" level="INFO">Typing text 'hiroshi.teshigahara789@gmail.com' into text field '//*[@id="email"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:01.999" endtime="20220316 12:27:02.072"/>
+<msg timestamp="20220316 12:39:59.258" level="INFO">Typing text 'hiroshi.teshigahara789@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.258" endtime="20220316 12:39:59.343"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.072" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20220316 12:27:02.101" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220316 12:27:02.125" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220316 12:27:02.072" endtime="20220316 12:27:02.125"/>
+<msg timestamp="20220316 12:39:59.343" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20220316 12:39:59.371" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220316 12:39:59.402" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220316 12:39:59.343" endtime="20220316 12:39:59.402"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.999" endtime="20220316 12:27:02.125"/>
+<status status="PASS" starttime="20220316 12:39:59.258" endtime="20220316 12:39:59.402"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="login"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.126" level="INFO">Clicking button '//*[@id="login"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:02.125" endtime="20220316 12:27:02.302"/>
+<msg timestamp="20220316 12:39:59.403" level="INFO">Clicking button '//*[@id="login"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.402" endtime="20220316 12:39:59.585"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Logout</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:02.302" endtime="20220316 12:27:02.314"/>
+<status status="PASS" starttime="20220316 12:39:59.585" endtime="20220316 12:39:59.599"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:01.998" endtime="20220316 12:27:02.315"/>
+<status status="PASS" starttime="20220316 12:39:59.257" endtime="20220316 12:39:59.599"/>
 </kw>
 <kw name="And Go To Car Rental Page" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="continue"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.316" level="INFO">Clicking button '//*[@id="continue"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:02.315" endtime="20220316 12:27:02.378"/>
+<msg timestamp="20220316 12:39:59.600" level="INFO">Clicking button '//*[@id="continue"]'.</msg>
+<status status="PASS" starttime="20220316 12:39:59.600" endtime="20220316 12:39:59.724"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>What would you like to drive?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:02.378" endtime="20220316 12:27:02.429"/>
+<status status="PASS" starttime="20220316 12:39:59.724" endtime="20220316 12:39:59.731"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:02.315" endtime="20220316 12:27:02.429"/>
+<status status="PASS" starttime="20220316 12:39:59.600" endtime="20220316 12:39:59.731"/>
 </kw>
 <kw name="When User Books A Car" library="keywords">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>//*[@id="carTable"]/tbody/tr[16]/td[1]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220316 12:27:02.430" endtime="20220316 12:27:02.725"/>
+<status status="PASS" starttime="20220316 12:39:59.732" endtime="20220316 12:40:00.014"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Model X</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:02.725" endtime="20220316 12:27:02.762"/>
+<status status="PASS" starttime="20220316 12:40:00.015" endtime="20220316 12:40:00.050"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="bookModelXpass6"]</arg>
+<arg>//*[@id="bookModelXpass7"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.763" level="INFO">Clicking button '//*[@id="bookModelXpass6"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:02.762" endtime="20220316 12:27:02.849"/>
+<msg timestamp="20220316 12:40:00.051" level="INFO">Clicking button '//*[@id="bookModelXpass7"]'.</msg>
+<status status="PASS" starttime="20220316 12:40:00.051" endtime="20220316 12:40:00.177"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Confirm booking of Tesla Model X</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:02.849" endtime="20220316 12:27:02.880"/>
+<status status="PASS" starttime="20220316 12:40:00.177" endtime="20220316 12:40:00.190"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:02.429" endtime="20220316 12:27:02.881"/>
+<status status="PASS" starttime="20220316 12:39:59.732" endtime="20220316 12:40:00.190"/>
 </kw>
 <kw name="And Enter Payment Information" library="keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="cardNum"]</arg>
 <arg>1234123412341234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.883" level="INFO">Typing text '1234123412341234' into text field '//*[@id="cardNum"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:02.882" endtime="20220316 12:27:02.946"/>
+<msg timestamp="20220316 12:40:00.192" level="INFO">Typing text '1234123412341234' into text field '//*[@id="cardNum"]'.</msg>
+<status status="PASS" starttime="20220316 12:40:00.191" endtime="20220316 12:40:00.267"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="fullName"]</arg>
 <arg>Hiroshi Teshigahara</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:02.946" level="INFO">Typing text 'Hiroshi Teshigahara' into text field '//*[@id="fullName"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:02.946" endtime="20220316 12:27:03.003"/>
+<msg timestamp="20220316 12:40:00.267" level="INFO">Typing text 'Hiroshi Teshigahara' into text field '//*[@id="fullName"]'.</msg>
+<status status="PASS" starttime="20220316 12:40:00.267" endtime="20220316 12:40:00.334"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="cvc"]</arg>
 <arg>000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:03.004" level="INFO">Typing text '000' into text field '//*[@id="cvc"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:03.003" endtime="20220316 12:27:03.053"/>
+<msg timestamp="20220316 12:40:00.334" level="INFO">Typing text '000' into text field '//*[@id="cvc"]'.</msg>
+<status status="PASS" starttime="20220316 12:40:00.334" endtime="20220316 12:40:00.385"/>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <arg>//*[@id="confirmSelection"]/form/select[1]</arg>
 <arg>6</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220316 12:27:03.053" level="INFO">Selecting options from selection list '//*[@id="confirmSelection"]/form/select[1]' by index 6.</msg>
-<status status="PASS" starttime="20220316 12:27:03.053" endtime="20220316 12:27:03.134"/>
+<msg timestamp="20220316 12:40:00.385" level="INFO">Selecting options from selection list '//*[@id="confirmSelection"]/form/select[1]' by index 6.</msg>
+<status status="PASS" starttime="20220316 12:40:00.385" endtime="20220316 12:40:00.474"/>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <arg>//*[@id="confirmSelection"]/form/select[2]</arg>
 <arg>6</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220316 12:27:03.135" level="INFO">Selecting options from selection list '//*[@id="confirmSelection"]/form/select[2]' by index 6.</msg>
-<status status="PASS" starttime="20220316 12:27:03.134" endtime="20220316 12:27:03.215"/>
+<msg timestamp="20220316 12:40:00.474" level="INFO">Selecting options from selection list '//*[@id="confirmSelection"]/form/select[2]' by index 6.</msg>
+<status status="PASS" starttime="20220316 12:40:00.474" endtime="20220316 12:40:00.564"/>
 </kw>
 <kw name="Press Confirm To Book Car" library="keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="confirm"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220316 12:27:03.216" level="INFO">Clicking button '//*[@id="confirm"]'.</msg>
-<status status="PASS" starttime="20220316 12:27:03.215" endtime="20220316 12:27:03.281"/>
+<msg timestamp="20220316 12:40:00.566" level="INFO">Clicking button '//*[@id="confirm"]'.</msg>
+<status status="PASS" starttime="20220316 12:40:00.565" endtime="20220316 12:40:00.640"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>A Tesla Model X is now ready for pickup</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:03.281" endtime="20220316 12:27:03.289"/>
+<status status="PASS" starttime="20220316 12:40:00.640" endtime="20220316 12:40:00.652"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:03.215" endtime="20220316 12:27:03.290"/>
+<status status="PASS" starttime="20220316 12:40:00.565" endtime="20220316 12:40:00.652"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:02.882" endtime="20220316 12:27:03.290"/>
+<status status="PASS" starttime="20220316 12:40:00.191" endtime="20220316 12:40:00.652"/>
 </kw>
 <kw name="Then User Gets Confirmation The Car Is Booked" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>A Tesla Model X is now ready for pickup</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:03.290" endtime="20220316 12:27:03.295"/>
+<status status="PASS" starttime="20220316 12:40:00.657" endtime="20220316 12:40:00.665"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>You can view your booking on your page</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220316 12:27:03.295" endtime="20220316 12:27:03.303"/>
+<status status="PASS" starttime="20220316 12:40:00.665" endtime="20220316 12:40:00.676"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:03.290" endtime="20220316 12:27:03.304"/>
+<status status="PASS" starttime="20220316 12:40:00.654" endtime="20220316 12:40:00.676"/>
 </kw>
 <doc>Testing that a user can book a car.</doc>
 <tag>VG_test</tag>
-<status status="PASS" starttime="20220316 12:27:01.938" endtime="20220316 12:27:03.304"/>
+<status status="PASS" starttime="20220316 12:39:59.191" endtime="20220316 12:40:00.680"/>
 </test>
 <kw name="End Web Test" library="keywords" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220316 12:27:03.305" endtime="20220316 12:27:05.529"/>
+<status status="PASS" starttime="20220316 12:40:00.682" endtime="20220316 12:40:02.823"/>
 </kw>
-<status status="PASS" starttime="20220316 12:27:03.305" endtime="20220316 12:27:05.530"/>
+<status status="PASS" starttime="20220316 12:40:00.682" endtime="20220316 12:40:02.823"/>
 </kw>
 <doc>Testing Infotiv Car Rental Page</doc>
-<status status="PASS" starttime="20220316 12:26:59.564" endtime="20220316 12:27:05.530"/>
+<status status="PASS" starttime="20220316 12:39:56.835" endtime="20220316 12:40:02.823"/>
 </suite>
-<status status="PASS" starttime="20220316 12:26:59.538" endtime="20220316 12:27:05.535"/>
+<status status="PASS" starttime="20220316 12:39:56.809" endtime="20220316 12:40:02.828"/>
 </suite>
 <statistics>
 <total>
