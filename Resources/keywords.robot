@@ -27,9 +27,9 @@ Go To Car Rental Page
     Wait Until Page Contains  What would you like to drive?
 User Books A Car
     Scroll Element Into View  //*[@id="carTable"]/tbody/tr[16]/td[1]
-    Wait Until Page Contains  Model S
-    Click Button  //*[@id="bookModelSpass5"]
-    Wait Until Page Contains  Confirm booking of Tesla Model S
+    Wait Until Page Contains  Model X
+    Click Button  //*[@id="bookModelXpass6"]
+    Wait Until Page Contains  Confirm booking of Tesla Model X
 Select Car Not Signed In
     Click Button  //*[@id="bookQ7pass5"]
 Verify Alert Box Appears
@@ -45,9 +45,9 @@ Enter Payment Information
     Press Confirm To Book Car
 Press Confirm To Book Car
     Click Button  //*[@id="confirm"]
-    Wait Until Page Contains  A Tesla Model S is now ready for pickup
+    Wait Until Page Contains  A Tesla Model X is now ready for pickup
 User Gets Confirmation The Car Is Booked
-    Wait Until Page Contains  A Tesla Model S is now ready for pickup
+    Wait Until Page Contains  A Tesla Model X is now ready for pickup
     Wait Until Page Contains  You can view your booking on your page
 Cancel Creating User
     Click Button  //*[@id="cancel"]
