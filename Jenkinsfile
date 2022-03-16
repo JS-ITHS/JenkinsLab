@@ -6,6 +6,7 @@ pipeline {
             steps {
                 git 'https://github.com/JS-ITHS/JenkinsLab.git'
             }
+          }
 
         stage('Build') {
             steps {
