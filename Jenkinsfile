@@ -19,7 +19,7 @@ pipeline {
         }
          stage('newman') {
             steps {
-                sh 'newman run Postmanlabb.postman_collection.json --environment Labvariables.postman_environment.json --reporters junit'
+                bat 'newman run Postmanlabb.postman_collection.json --environment Labvariables.postman_environment.json --reporters junit'
             }
             post {
                 always {
