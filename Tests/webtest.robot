@@ -7,7 +7,7 @@ Suite Teardown  End Web Test
 
 
 *** Variables ***
-${BROWSER}  chrome
+${BROWSER} =  chrome
 ${URL}  http://rental3.infotiv.net/
 ${MAIL}  hiroshi.teshigahara789@gmail.com
 ${PASSWORD}  secret
