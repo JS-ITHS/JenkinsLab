@@ -34,12 +34,6 @@ pipeline {
                 }
         }
 
-        stage('Cobertura Code Coverage') {
-            steps {
-                sh 'mvn clean cobertura:cobertura'
-            }
-    }
-        }
         stage('Robot Framework System Tests With Selenium') {
             steps {
                 sh 'robot --variable BROWSER:headlesschrome -d Results  Tests'
