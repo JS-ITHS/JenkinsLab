@@ -22,11 +22,6 @@ pipeline {
                     junit '**/TEST*.xml'
                 }
             }
-            post {
-                always {
-                    cobertura coberturaReportFile: '*/.xml'
-                }
-            }
         }
          stage('API Testing With Newman') {
             steps {
