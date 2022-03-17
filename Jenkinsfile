@@ -2,18 +2,18 @@ pipeline {
     agent any
     stages {
 
-//    stage('Checkout') {
-//            steps {
-//                git 'https://github.com/JS-ITHS/JenkinsLab.git'
-//            }
-//          }
+    stage('Checkout') {
+            steps {
+                git 'https://github.com/JS-ITHS/JenkinsLab.git'
+            }
+          }
 
-        stage('Build') {
+        stage('Junit Build') {
             steps {
                 sh "mvn compile"
             }
         }
-        stage('Test') {
+        stage('Junit Test') {
             steps {
                 sh "mvn test"
             }
@@ -23,7 +23,7 @@ pipeline {
                 }
             }
         }
-         stage('newman') {
+         stage('API Testing With Newman') {
             steps {
                 sh 'newman run Postmanlabb.postman_collection.json --environment Labvariables.postman_environment.json --reporters junit'
             }
@@ -33,7 +33,7 @@ pipeline {
                     }
                 }
         }
-        stage('Robot Framework System tests with Selenium') {
+        stage('Robot Framework System Tests With Selenium') {
             steps {
                 sh 'robot --variable BROWSER:headlesschrome -d Results  Tests'
             }
