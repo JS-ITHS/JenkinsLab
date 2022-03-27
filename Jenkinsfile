@@ -24,9 +24,9 @@ pipeline {
             }
         }
         
-       stage('Code Coverage') {
+      stage('Code Coverage') {
         steps {
-            sh 'mvn clean cobertura:cobertura'
+            sh "mvn -B cobertura:cobertura"
         }
     }
          stage('API Testing With Newman') {
