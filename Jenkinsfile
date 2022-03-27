@@ -23,6 +23,12 @@ pipeline {
                 }
             }
         }
+        
+       stage('Code Coverage') {
+        steps {
+            sh 'mvn clean cobertura:cobertura'
+        }
+    }
          stage('API Testing With Newman') {
             steps {
                 sh 'newman run Postmanlabb.postman_collection.json --environment Labvariables.postman_environment.json --reporters junit'
